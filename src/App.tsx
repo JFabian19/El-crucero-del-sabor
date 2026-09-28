@@ -1,15 +1,19 @@
 import { useMemo, useState } from 'react';
-import { ChevronRight, MapPin, Minus, Phone, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
+import { Check, ChevronRight, Copy, MapPin, Minus, Phone, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { DEFAULT_MENU_DATA, Dish } from './data/menuData';
 
-const WHATSAPP_NUMBER = '51987482888';
+const WHATSAPP_NUMBER = '987482888';
+const WHATSAPP_LINK_NUMBER = `51${WHATSAPP_NUMBER}`;
+const WHATSAPP_DISPLAY = '987 482 888';
+const YAPE_NUMBER = '976219120';
 type CartItem = Dish & { cantidad: number };
 const numericPrice = (value: string) => Number(value.match(/\d+(?:\.\d+)?/)?.[0] ?? 0);
 
 export default function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [showCart, setShowCart] = useState(false);
+  const [copiedYape, setCopiedYape] = useState(false);
   const [activeCategory, setActiveCategory] = useState(DEFAULT_MENU_DATA[0].id);
   const count = useMemo(() => cart.reduce((sum, item) => sum + item.cantidad, 0), [cart]);
   const total = useMemo(() => cart.reduce((sum, item) => sum + numericPrice(item.precio) * item.cantidad, 0), [cart]);
@@ -30,7 +34,26 @@ export default function App() {
   const send = () => {
     const lines = cart.map(item => `• ${item.cantidad} x ${item.nombre} (${item.precio})`).join('\n');
     const message = `¡Hola El Crucero del Sabor! Deseo realizar este pedido:\n\n${lines}\n\n*TOTAL: S/. ${total.toFixed(2)}*`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_LINK_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+  const copyYapeNumber = () => {
+    setCopiedYape(true);
+    window.setTimeout(() => setCopiedYape(false), 5000);
+    const fallbackCopy = () => {
+      const field = document.createElement('textarea');
+      field.value = YAPE_NUMBER;
+      field.style.position = 'fixed';
+      field.style.opacity = '0';
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand('copy');
+      field.remove();
+    };
+    if (navigator.clipboard?.writeText) {
+      void navigator.clipboard.writeText(YAPE_NUMBER).catch(fallbackCopy);
+    } else {
+      fallbackCopy();
+    }
   };
 
   return <div className="site-shell">
@@ -58,7 +81,7 @@ export default function App() {
         {DEFAULT_MENU_DATA.map((category, categoryIndex) => <section id={category.id} className={`menu-section theme-${category.theme}`} key={category.id}>
           {categoryIndex === 7 && <div className="region-break"><span>Desde aquí</span><strong>Sabores de nuestra Amazonía</strong></div>}
           <div className={`category-banner focus-${category.enfoque}`}>
-            <img src={category.imagen} alt="" />
+            <img src={category.imagen} alt="" loading="lazy" decoding="async" />
             <div><span>{category.etiqueta}</span><h2>{category.nombre}</h2><small>{category.items.length} opciones</small></div>
           </div>
           <div className="dish-list">
@@ -79,14 +102,32 @@ export default function App() {
 
       <section className="delivery">
         <MapPin size={23}/><div><b>Visítanos o pide por WhatsApp</b><p>Jr. Hipólito Unanue 1534, La Victoria · Frente al parque Cánepa</p></div>
-        <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer"><Phone size={15}/> Pedir</a>
+        <a href={`https://wa.me/${WHATSAPP_LINK_NUMBER}`} target="_blank" rel="noreferrer"><Phone size={15}/> Pedir</a>
+      </section>
+
+      <section className="yape-payment" aria-labelledby="yape-title">
+        <div className="yape-heading">
+          <span>Pago rápido y seguro</span>
+          <h2 id="yape-title">Paga aquí con Yape</h2>
+          <p>Escanea el QR o copia el número para completar tu pago.</p>
+        </div>
+        <div className="yape-visual">
+          <img src="/images/yape-qr.png" alt="Código QR de Yape para pagar al número 976 219 120" loading="lazy" decoding="async" />
+          <div className="yape-number-card">
+            <div><small>Número Yape</small><strong>976 219 120</strong></div>
+            <button type="button" onClick={copyYapeNumber} className={copiedYape ? 'copied' : ''} aria-live="polite">
+              {copiedYape ? <Check size={18}/> : <Copy size={18}/>}
+              {copiedYape ? 'Copiado' : 'Copiar número'}
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <img src="/images/crucero-logo.png" alt="El Crucero del Sabor" />
       <p>Pescados · Mariscos · Comida criolla · Comida de la selva</p>
-      <small>Jr. Hipólito Unanue 1534, La Victoria · 987 482 888</small>
+      <small>Jr. Hipólito Unanue 1534, La Victoria · {WHATSAPP_DISPLAY}</small>
     </footer>
 
     <AnimatePresence>{count > 0 && !showCart && <motion.button initial={{ y: 90 }} animate={{ y: 0 }} exit={{ y: 90 }} onClick={() => setShowCart(true)} className="floating-cart"><span><ShoppingBag size={19}/> {count} {count === 1 ? 'producto' : 'productos'}</span><b>S/. {total.toFixed(2)} <ChevronRight size={17}/></b></motion.button>}</AnimatePresence>

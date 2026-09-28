@@ -36,10 +36,7 @@ button { font:inherit; }
 .menu-section { scroll-margin-top:145px; margin:24px 0 42px; border-radius:20px; }
 .category-banner { height:165px; position:relative; overflow:hidden; border-radius:19px 19px 0 0; background:var(--navy); color:white; box-shadow:0 8px 22px #053b741c; }
 .category-banner:after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#032e64f2 0%,#03467bc7 45%,#032e6440 100%); }
-.category-banner img { width:100%; height:100%; object-fit:cover; filter:saturate(1.08) contrast(1.03); }
-.category-banner.focus-mar img { object-position:12% 54%; }
-.category-banner.focus-criollo img { object-position:20% 84%; }
-.category-banner.focus-selva img { object-position:88% 65%; }
+.category-banner img { width:100%; height:100%; object-fit:cover; object-position:center 52%; filter:saturate(1.08) contrast(1.03); }
 .category-banner div { z-index:1; position:absolute; left:20px; right:16px; top:34px; }
 .category-banner span,.panel-head span { color:var(--gold); text-transform:uppercase; font-size:10px; letter-spacing:.19em; font-weight:800; }
 .category-banner h2 { font-family:'Bebas Neue',sans-serif; letter-spacing:.025em; font-size:43px; line-height:.88; margin:10px 0 7px; text-shadow:0 2px 8px #001e41aa; }
@@ -82,6 +79,21 @@ button { font:inherit; }
 .delivery p { font-size:10px; line-height:1.35; margin:4px 0 0; color:#d8f2ff; }
 .delivery a { display:inline-flex; align-items:center; gap:5px; color:white; background:var(--red); border-radius:99px; padding:10px 12px; font-size:10px; font-weight:800; text-decoration:none; white-space:nowrap; }
 
+.yape-payment { margin:0 18px 36px; padding:24px 18px 18px; border-radius:22px; color:white; background:linear-gradient(145deg,#681979,#86268f); box-shadow:0 14px 32px #55115c35; overflow:hidden; }
+.yape-heading { text-align:center; margin-bottom:17px; }
+.yape-heading span { color:#38ded1; text-transform:uppercase; font-size:9px; letter-spacing:.18em; font-weight:800; }
+.yape-heading h2 { margin:6px 0 7px; font-family:'Playfair Display',serif; font-size:28px; }
+.yape-heading p { margin:0; color:#f2dff5; font-size:11px; }
+.yape-visual { max-width:480px; margin:auto; position:relative; overflow:hidden; border-radius:20px; background:#742080; box-shadow:0 12px 30px #2d003c55; }
+.yape-visual img { width:100%; height:auto; display:block; }
+.yape-number-card { position:absolute; left:16%; right:16%; top:69%; min-height:8.2%; padding:9px 10px 9px 15px; display:flex; align-items:center; justify-content:space-between; gap:10px; border:1px solid #ffffff; border-radius:16px; color:#26102d; background:#fff; box-shadow:0 8px 24px #2b003c55; }
+.yape-number-card div { min-width:0; }
+.yape-number-card small { display:block; color:#71217c; font-size:9px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
+.yape-number-card strong { display:block; margin-top:3px; font-size:22px; letter-spacing:.035em; white-space:nowrap; }
+.yape-number-card button { min-height:42px; padding:0 13px; border:0; border-radius:12px; display:flex; align-items:center; justify-content:center; gap:7px; color:white; background:#792283; font-size:10px; font-weight:800; white-space:nowrap; cursor:pointer; transition:background .2s ease,transform .2s ease; }
+.yape-number-card button:hover { background:#5d1767; transform:translateY(-1px); }
+.yape-number-card button.copied { background:#087d68; }
+
 footer { background:#032d5a; color:white; text-align:center; padding:28px 20px 31px; border-top:5px solid var(--red); }
 footer img { width:180px; height:118px; object-fit:cover; border-radius:18px; border:2px solid #ffffffaa; }
 footer p { color:var(--gold); margin:12px 0 16px; font-size:10px; text-transform:uppercase; letter-spacing:.11em; }
@@ -113,6 +125,7 @@ footer small { color:#a9cfe6; font-size:10px; }
   .category-banner { height:188px; }
   .category-banner h2 { font-size:52px; }
   .delivery { margin-left:34px; margin-right:34px; }
+  .yape-payment { margin-left:34px; margin-right:34px; padding:28px 24px 22px; }
 }
 
 @media (max-width:420px) {
@@ -121,4 +134,8 @@ footer small { color:#a9cfe6; font-size:10px; }
   .delivery { align-items:flex-start; }
   .delivery a { padding:9px; }
   .brand b { font-size:23px; }
+  .yape-payment { padding-left:13px; padding-right:13px; }
+  .yape-number-card { left:12%; right:12%; padding:8px 9px 8px 12px; }
+  .yape-number-card strong { font-size:18px; }
+  .yape-number-card button { padding:0 10px; font-size:9px; }
 }

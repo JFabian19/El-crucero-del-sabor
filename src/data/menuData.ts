@@ -19,11 +19,20 @@ export interface Category {
 
 const price = (value: number) => `S/. ${value.toFixed(2)}`;
 const dish = (grupo: string, nombre: string, value: number, nota?: string): Dish => ({ grupo, nombre, precio: price(value), nota });
-const GIRO = '/images/crucero-giro.png';
+const CATEGORY_IMAGES = {
+  marinos: '/images/category-marinos.png',
+  frituras: '/images/category-frituras.png',
+  criollos: '/images/category-criollos.png',
+  selva: '/images/category-selva.png',
+  desayunos: '/images/category-desayunos.png',
+  menu: '/images/category-menu.png',
+  saludable: '/images/category-saludable.png',
+  bebidas: '/images/category-bebidas.png',
+};
 
 export const DEFAULT_MENU_DATA: Category[] = [
   {
-    id: 'marinos', nombre: 'Platos marinos', etiqueta: 'Pescados y mariscos', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'marinos', nombre: 'Platos marinos', etiqueta: 'Pescados y mariscos', imagen: CATEGORY_IMAGES.marinos, enfoque: 'mar', theme: 'marine', items: [
       dish('Ceviches', 'Ceviche de pescado', 35), dish('Ceviches', 'Ceviche mixto', 45),
       dish('Ceviches', 'Ceviche al Crucero de pescado', 43), dish('Ceviches', 'Ceviche al Crucero mixto', 48),
       dish('Ceviches', 'Leche de tigre', 25), dish('Ceviches', 'Chilcano', 15), dish('Ceviches', 'Chilcano acevichado', 20),
@@ -34,7 +43,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'pescados', nombre: 'Pescados y sudados', etiqueta: 'Del mar a la mesa', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'pescados', nombre: 'Pescados y sudados', etiqueta: 'Del mar a la mesa', imagen: CATEGORY_IMAGES.frituras, enfoque: 'mar', theme: 'marine', items: [
       dish('Jaleas', 'Jalea de pescado', 45), dish('Jaleas', 'Jalea mixta', 50), dish('Jaleas', 'Jalea de cecina', 40), dish('Jaleas', 'Jalea mixta de cecina y chorizo', 45),
       dish('Pescado frito', 'Cabrilla frita con yuca sancochada o frita', 45), dish('Pescado frito', 'Corvina frita con yuca sancochada o frita', 55),
       dish('Pescado frito', 'Chita al ajo con yuca sancochada o frita', 55), dish('Pescado frito', 'Trucha frita con frejol o yuca', 30),
@@ -47,7 +56,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'duos', nombre: 'Dúos marinos', etiqueta: 'Para compartir', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'duos', nombre: 'Dúos marinos', etiqueta: 'Para compartir', imagen: CATEGORY_IMAGES.frituras, enfoque: 'mar', theme: 'marine', items: [
       dish('Dúos marinos', 'Ceviche con chicharrón de pescado', 50), dish('Dúos marinos', 'Ceviche con chicharrón de calamar', 50),
       dish('Dúos marinos', 'Ceviche con arroz con mariscos', 50), dish('Dúos marinos', 'Ceviche con chaufa de pescado', 50),
       dish('Dúos marinos', 'Ceviche con chaufa de mariscos', 50), dish('Dúos marinos', 'Arroz con mariscos y chicharrón de pescado', 55),
@@ -57,7 +66,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'trios', nombre: 'Tríos marinos', etiqueta: 'Combinaciones marinas', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'trios', nombre: 'Tríos marinos', etiqueta: 'Combinaciones marinas', imagen: CATEGORY_IMAGES.frituras, enfoque: 'mar', theme: 'marine', items: [
       dish('Tríos marinos', 'Ceviche + chicharrón de pescado + arroz con mariscos', 70),
       dish('Tríos marinos', 'Ceviche + chicharrón de calamar + arroz con mariscos', 70),
       dish('Tríos marinos', 'Ceviche + chicharrón de pescado + chaufa de pescado', 70),
@@ -72,7 +81,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'clasicos', nombre: 'Clásicos marinos', etiqueta: 'Favoritos de la casa', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'clasicos', nombre: 'Clásicos marinos', etiqueta: 'Favoritos de la casa', imagen: CATEGORY_IMAGES.marinos, enfoque: 'mar', theme: 'marine', items: [
       dish('Clásicos', 'Leche de pantera', 25), dish('Clásicos', 'Leche de tigre', 25), dish('Clásicos', 'Ceviche de conchas negras', 45),
       dish('Clásicos', 'Choritos a la chalaca · 6 unidades', 25), dish('Clásicos', 'Choritos a la chalaca · 10 unidades', 50),
       dish('Clásicos', 'Ceviche clásico', 55), dish('Clásicos', 'Pulpo a la parrilla', 55), dish('Clásicos', 'Causa al olivo', 35), dish('Clásicos', 'Arroz con conchas negras', 45),
@@ -83,7 +92,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'criollos', nombre: 'Platos criollos', etiqueta: 'Sazón peruana', imagen: GIRO, enfoque: 'criollo', theme: 'criollo', items: [
+    id: 'criollos', nombre: 'Platos criollos', etiqueta: 'Sazón peruana', imagen: CATEGORY_IMAGES.criollos, enfoque: 'criollo', theme: 'criollo', items: [
       dish('Platos a la carta', 'Costillar a la norteña con yuca y frejol', 45), dish('Platos a la carta', 'Tacu tacu con cabrito a la norteña', 60),
       dish('Platos a la carta', 'Arroz con pato', 45), dish('Platos a la carta', 'Seco de ternera con yuca y frejol', 55), dish('Platos a la carta', 'Tacu tacu con seco de pato', 55),
       dish('Carnes', 'Churrasco a la plancha', 30), dish('Carnes', 'Bisteck a lo pobre', 35), dish('Carnes', 'Bisteck a la plancha', 30),
@@ -98,7 +107,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'tradicionales', nombre: 'Sopas y tradicionales', etiqueta: 'Cocina criolla', imagen: GIRO, enfoque: 'criollo', theme: 'criollo', items: [
+    id: 'tradicionales', nombre: 'Sopas y tradicionales', etiqueta: 'Cocina criolla', imagen: CATEGORY_IMAGES.criollos, enfoque: 'criollo', theme: 'criollo', items: [
       dish('Pollo', 'Milanesa de pollo', 30), dish('Pollo', 'Pollo broaster', 30), dish('Pollo', 'Chicharrón de pollo', 30),
       dish('Pollo', 'Pechuga a la plancha', 30), dish('Pollo', 'Pechuga a la plancha a lo pobre', 35), dish('Pollo', 'Tacu tacu con pechuga a lo pobre', 35),
       dish('Sopas', 'Caldo de pollo', 20), dish('Sopas', 'Sustancia de carne', 20), dish('Sopas', 'Sustancia de pollo', 20),
@@ -111,7 +120,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'selva', nombre: 'Platos de la selva', etiqueta: 'Sabor amazónico', imagen: GIRO, enfoque: 'selva', theme: 'amazon', items: [
+    id: 'selva', nombre: 'Platos de la selva', etiqueta: 'Sabor amazónico', imagen: CATEGORY_IMAGES.selva, enfoque: 'selva', theme: 'amazon', items: [
       dish('Tacacho', 'Tacacho con cecina', 25), dish('Tacacho', 'Tacacho con chorizo', 20), dish('Tacacho', 'Tacacho con pescado', 25),
       dish('Tacacho', 'Tacacho con pechuga a la plancha', 35), dish('Tacacho', 'Tacacho con doncella', 35), dish('Tacacho', 'Tacacho con boquichico', 35),
       dish('Tacacho', 'Tacacho con palometa', 35), dish('Tacacho', 'Tacacho a lo macho', 40), dish('Tacacho', 'Tacacho mixto', 40),
@@ -125,7 +134,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'especiales-selva', nombre: 'Especiales de la selva', etiqueta: 'Combinaciones amazónicas', imagen: GIRO, enfoque: 'selva', theme: 'amazon', items: [
+    id: 'especiales-selva', nombre: 'Especiales de la selva', etiqueta: 'Combinaciones amazónicas', imagen: CATEGORY_IMAGES.selva, enfoque: 'selva', theme: 'amazon', items: [
       dish('Frituras', 'Doncella frita', 35), dish('Frituras', 'Palometa frita', 35), dish('Frituras', 'Boquichico frito', 35),
       dish('Platos especiales', 'Cecina a lo pobre', 35), dish('Platos especiales', 'Jalea de cecina', 40), dish('Platos especiales', 'Saltado de cecina', 40),
       dish('Platos especiales', 'Jalea mixta de cecina y chorizo', 40), dish('Platos especiales', 'Tacu tacu con saltado de cecina', 45), dish('Platos especiales', 'Tacu tacu con cecina a lo pobre', 45),
@@ -139,7 +148,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'bebidas-selva', nombre: 'Bebidas de la selva', etiqueta: 'Frutas amazónicas', imagen: GIRO, enfoque: 'selva', theme: 'amazon', items: [
+    id: 'bebidas-selva', nombre: 'Bebidas de la selva', etiqueta: 'Frutas amazónicas', imagen: CATEGORY_IMAGES.bebidas, enfoque: 'selva', theme: 'amazon', items: [
       dish('Refrescos · jarra', 'Aguajina', 20), dish('Refrescos · jarra', 'Cocona', 20), dish('Refrescos · jarra', 'Camu camu', 20),
       dish('Refrescos · jarra', 'Chicha morada', 15), dish('Refrescos · jarra', 'Piña', 20), dish('Refrescos · jarra', 'Maracuyá', 15),
       dish('Refrescos · 1/2 litro', 'Aguajina', 10), dish('Refrescos · 1/2 litro', 'Cocona', 10), dish('Refrescos · 1/2 litro', 'Camu camu', 10),
@@ -155,7 +164,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'desayunos', nombre: 'Desayunos', etiqueta: 'Desde temprano', imagen: GIRO, enfoque: 'criollo', theme: 'daily', items: [
+    id: 'desayunos', nombre: 'Desayunos', etiqueta: 'Desde temprano', imagen: CATEGORY_IMAGES.desayunos, enfoque: 'criollo', theme: 'daily', items: [
       dish('Jugos solos', 'Jugo de papaya', 8), dish('Jugos solos', 'Jugo de fresa', 8), dish('Jugos solos', 'Jugo de piña', 8),
       dish('Jugos solos', 'Jugo de melón', 8), dish('Jugos solos', 'Jugo de mango', 8), dish('Jugos solos', 'Jugo de plátano', 8), dish('Jugos solos', 'Jugo surtido', 10),
       dish('Batidos con leche', 'Batido de fresa', 10), dish('Batidos con leche', 'Batido de papaya', 10), dish('Batidos con leche', 'Batido de plátano', 10),
@@ -167,7 +176,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'menu-dia', nombre: 'Menú del día', etiqueta: 'Selección actualizable', imagen: GIRO, enfoque: 'criollo', theme: 'daily', items: [
+    id: 'menu-dia', nombre: 'Menú del día', etiqueta: 'Selección actualizable', imagen: CATEGORY_IMAGES.menu, enfoque: 'criollo', theme: 'daily', items: [
       { grupo: 'Entradas a elegir', nombre: 'Sopa de casa con carne', precio: 'Incluido' }, { grupo: 'Entradas a elegir', nombre: 'Tequeños', precio: 'Incluido' },
       { grupo: 'Entradas a elegir', nombre: 'Ensalada mixta', precio: 'Incluido' }, { grupo: 'Entradas a elegir', nombre: 'Gaseosa, chicha morada o agua mineral', precio: 'Incluido' },
       dish('Segundos', 'Pollo al horno con puré', 15), dish('Segundos', 'Seco de ternera con frejol o yuca', 16), dish('Segundos', 'Pollo a la plancha con frejol', 14),
@@ -190,7 +199,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'dietas', nombre: 'Comida saludable', etiqueta: 'Dietas', imagen: GIRO, enfoque: 'criollo', theme: 'daily', items: [
+    id: 'dietas', nombre: 'Comida saludable', etiqueta: 'Dietas', imagen: CATEGORY_IMAGES.saludable, enfoque: 'criollo', theme: 'daily', items: [
       dish('Dietas', 'Sopa dieta con trozos de pollo, cabello de ángel y papa amarilla', 20),
       dish('Dietas', 'Pechuga a la plancha con ensalada fresca o cocida y papa sancochada o arroz', 25),
       dish('Dietas', 'Ensalada Crucero con pollo a la plancha en trozos y palta', 25), dish('Dietas', 'Ensalada fresca con atún', 25),
@@ -200,7 +209,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'bebidas', nombre: 'Bebidas', etiqueta: 'Frías y calientes', imagen: GIRO, enfoque: 'mar', theme: 'marine', items: [
+    id: 'bebidas', nombre: 'Bebidas', etiqueta: 'Frías y calientes', imagen: CATEGORY_IMAGES.bebidas, enfoque: 'mar', theme: 'marine', items: [
       dish('Refrescos · 1 litro', 'Chicha morada', 15), dish('Refrescos · 1 litro', 'Maracuyá', 16), dish('Refrescos · 1 litro', 'Aguaje', 20),
       dish('Refrescos · 1 litro', 'Cocona', 20), dish('Refrescos · 1 litro', 'Camu camu', 20), dish('Refrescos · 1 litro', 'Piña', 16),
       dish('Refrescos · 1/2 litro', 'Chicha morada', 8), dish('Refrescos · 1/2 litro', 'Maracuyá', 8), dish('Refrescos · 1/2 litro', 'Aguaje', 10),
