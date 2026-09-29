@@ -128,6 +128,7 @@ footer small { color:#a9cfe6; font-size:10px; }
 .menu-customizer { max-width:760px; width:100%; max-height:92vh; overflow:auto; padding:24px 20px 26px; color:var(--ink); background:var(--paper); border-radius:27px 27px 0 0; }
 .menu-customizer .panel-head { margin-bottom:14px; }
 .menu-customizer .panel-head h2 { max-width:520px; font-size:25px; line-height:1.08; }
+.customizer-fields { margin-bottom:18px; padding:14px; border:1px solid #e5cf91; border-radius:18px; background:#fffdf6; }
 .selected-menu { position:relative; margin-bottom:20px; padding:15px 76px 15px 16px; border:1px solid #f0d38a; border-radius:14px; background:#fff8de; }
 .selected-menu span,.selected-menu b { display:block; }
 .selected-menu span { color:#97600b; text-transform:uppercase; font-size:9px; font-weight:800; letter-spacing:.12em; }
@@ -139,6 +140,12 @@ footer small { color:#a9cfe6; font-size:10px; }
 .choice-grid button { min-height:52px; padding:10px 12px; display:flex; align-items:center; justify-content:center; gap:6px; border:1px solid #cbdce5; border-radius:12px; color:#315970; background:white; font-size:12px; font-weight:700; line-height:1.2; cursor:pointer; }
 .choice-grid button.selected { color:#7f4700; border-color:#d88712; background:#fff2c3; box-shadow:0 0 0 2px #ffd75d4d; }
 .choice-grid button svg { flex:0 0 auto; }
+.order-note { display:block; position:relative; margin:0; }
+.order-note > span { display:block; margin-bottom:10px; font-family:'Playfair Display',serif; font-size:17px; font-weight:800; }
+.order-note textarea { width:100%; min-height:96px; resize:vertical; padding:13px 14px 28px; border:1px solid #cbdce5; border-radius:12px; color:var(--ink); background:white; font:inherit; font-size:13px; line-height:1.4; outline:none; }
+.order-note textarea:focus { border-color:#d88712; box-shadow:0 0 0 3px #ffd75d38; }
+.order-note textarea::placeholder { color:#8799a3; }
+.order-note small { position:absolute; right:11px; bottom:9px; color:#7a8b94; font-size:9px; }
 .add-custom-menu { width:100%; min-height:52px; border:0; border-radius:13px; display:flex; align-items:center; justify-content:center; gap:8px; color:white; background:#d17b00; font-weight:800; cursor:pointer; }
 .add-custom-menu:disabled { color:#7a8b94; background:#dce5ea; cursor:not-allowed; }
 
