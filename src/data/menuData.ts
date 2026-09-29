@@ -30,7 +30,15 @@ const CATEGORY_IMAGES = {
   bebidas: '/images/category-bebidas.png',
 };
 
-export const MENU_ENTRADAS = ['Sopa de casa con carne', 'Tequeños', 'Ensalada mixta'] as const;
+export const MENU_ENTRADAS = [
+  'Sopa de casa con carne',
+  'Tequeños',
+  'Ensalada mixta',
+  'Coca-Cola',
+  'Inca Kola',
+  'Chicha morada',
+  'Agua mineral',
+] as const;
 
 const CATALOG_CATEGORIES: Category[] = [
   {
