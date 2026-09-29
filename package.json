@@ -7,6 +7,7 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build --configLoader runner",
     "preview": "vite preview",
+    "images:optimize": "node scripts/optimize-images.mjs",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },
@@ -28,6 +29,7 @@
     "@types/node": "^22.14.0",
     "@types/papaparse": "^5.5.2",
     "autoprefixer": "^10.4.21",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",

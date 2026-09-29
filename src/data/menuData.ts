@@ -20,14 +20,14 @@ export interface Category {
 const price = (value: number) => `S/. ${value.toFixed(2)}`;
 const dish = (grupo: string, nombre: string, value: number, nota?: string): Dish => ({ grupo, nombre, precio: price(value), nota });
 const CATEGORY_IMAGES = {
-  marinos: '/images/category-marinos.png',
-  frituras: '/images/category-frituras.png',
-  criollos: '/images/category-criollos.png',
-  selva: '/images/category-selva.png',
-  desayunos: '/images/category-desayunos.png',
-  menu: '/images/category-menu.png',
-  saludable: '/images/category-saludable.png',
-  bebidas: '/images/category-bebidas.png',
+  marinos: '/images/category-marinos.webp',
+  frituras: '/images/category-frituras.webp',
+  criollos: '/images/category-criollos.webp',
+  selva: '/images/category-selva.webp',
+  desayunos: '/images/category-desayunos.webp',
+  menu: '/images/category-menu.webp',
+  saludable: '/images/category-saludable.webp',
+  bebidas: '/images/category-bebidas.webp',
 };
 
 export const MENU_ENTRADAS = [

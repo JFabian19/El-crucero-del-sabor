@@ -80,7 +80,7 @@ export default function App() {
   return <div className="site-shell">
     <header className="topbar">
       <a href="#inicio" className="brand" aria-label="Ir al inicio">
-        <img src="/images/crucero-logo.png" alt="" />
+        <img src="/images/crucero-logo.webp" alt="" />
         <span><b>El Crucero</b><small>del Sabor</small></span>
       </a>
       <button className="cart-button" onClick={() => count && setShowCart(true)} aria-label="Ver pedido">
@@ -90,7 +90,7 @@ export default function App() {
 
     <main id="inicio">
       <section className="hero" aria-label="El Crucero del Sabor: pescados, mariscos, comida criolla y comida de la selva">
-        <img src="/images/crucero-giro.png" alt="El Crucero del Sabor: pescados y mariscos, comida criolla y comida de la selva" />
+        <img src="/images/crucero-giro.webp" alt="El Crucero del Sabor: pescados y mariscos, comida criolla y comida de la selva" />
       </section>
       <div className="trust-strip"><span>Pescados y mariscos</span><i>•</i><span>Comida criolla</span><i>•</i><span>Comida de la selva</span></div>
 
@@ -134,7 +134,7 @@ export default function App() {
           <p>Escanea el QR o copia el número para completar tu pago.</p>
         </div>
         <div className="yape-visual">
-          <img src="/images/yape-qr.png" alt="Código QR de Yape para pagar al número 976 219 120" loading="lazy" decoding="async" />
+          <img src="/images/yape-qr.webp" alt="Código QR de Yape para pagar al número 976 219 120" loading="lazy" decoding="async" />
           <div className="yape-number-card">
             <div><small>Número Yape</small><strong>976 219 120</strong></div>
             <button type="button" onClick={copyYapeNumber} className={copiedYape ? 'copied' : ''} aria-live="polite">
@@ -147,7 +147,7 @@ export default function App() {
     </main>
 
     <footer>
-      <img src="/images/crucero-logo.png" alt="El Crucero del Sabor" />
+      <img src="/images/crucero-logo.webp" alt="El Crucero del Sabor" />
       <p>Pescados · Mariscos · Comida criolla · Comida de la selva</p>
       <small>Jr. Hipólito Unanue 1534, La Victoria · {WHATSAPP_DISPLAY}</small>
     </footer>
