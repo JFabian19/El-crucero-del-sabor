@@ -30,7 +30,10 @@ const CATEGORY_IMAGES = {
   bebidas: '/images/category-bebidas.png',
 };
 
-export const DEFAULT_MENU_DATA: Category[] = [
+export const MENU_ENTRADAS = ['Sopa de casa con carne', 'Tequeños', 'Ensalada mixta'] as const;
+export const MENU_BEBIDAS = ['Coca-Cola', 'Inca Kola', 'Chicha morada', 'Agua mineral'] as const;
+
+const CATALOG_CATEGORIES: Category[] = [
   {
     id: 'marinos', nombre: 'Platos marinos', etiqueta: 'Pescados y mariscos', imagen: CATEGORY_IMAGES.marinos, enfoque: 'mar', theme: 'marine', items: [
       dish('Ceviches', 'Ceviche de pescado', 35), dish('Ceviches', 'Ceviche mixto', 45),
@@ -176,9 +179,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     ],
   },
   {
-    id: 'menu-dia', nombre: 'Menú del día', etiqueta: 'Selección actualizable', imagen: CATEGORY_IMAGES.menu, enfoque: 'criollo', theme: 'daily', items: [
-      { grupo: 'Entradas a elegir', nombre: 'Sopa de casa con carne', precio: 'Incluido' }, { grupo: 'Entradas a elegir', nombre: 'Tequeños', precio: 'Incluido' },
-      { grupo: 'Entradas a elegir', nombre: 'Ensalada mixta', precio: 'Incluido' }, { grupo: 'Entradas a elegir', nombre: 'Gaseosa, chicha morada o agua mineral', precio: 'Incluido' },
+    id: 'menu-dia', nombre: 'Menús', etiqueta: 'Incluyen entrada y bebida', imagen: CATEGORY_IMAGES.menu, enfoque: 'criollo', theme: 'daily', items: [
       dish('Segundos', 'Pollo al horno con puré', 15), dish('Segundos', 'Seco de ternera con frejol o yuca', 16), dish('Segundos', 'Pollo a la plancha con frejol', 14),
       dish('Segundos', 'Pollo a la plancha con puré', 15), dish('Segundos', 'Asado de res con puré o frejol', 20), dish('Segundos', 'Arroz chaufa de cecina o chorizo', 25),
       dish('Segundos', 'Arroz chaufa de pollo o carne', 20), dish('Segundos', 'Costillar dorado con papa sancochada', 25),
@@ -224,4 +225,25 @@ export const DEFAULT_MENU_DATA: Category[] = [
       dish('Vinos y cocteles', 'Pisco sour', 15), dish('Vinos y cocteles', 'Chilcano', 15),
     ],
   },
+];
+
+const MENU_ENTRADAS_CATEGORY: Category = {
+  id: 'entradas-menu',
+  nombre: 'Entradas',
+  etiqueta: 'Incluidas en tu menú',
+  imagen: CATEGORY_IMAGES.menu,
+  enfoque: 'criollo',
+  theme: 'daily',
+  items: [
+    ...MENU_ENTRADAS.map(nombre => ({ grupo: 'Elige una entrada', nombre, precio: 'Incluida con tu menú' })),
+    ...MENU_BEBIDAS.map(nombre => ({ grupo: 'Elige una bebida', nombre, precio: 'Incluida con tu menú' })),
+  ],
+};
+
+const MENU_CATEGORY = CATALOG_CATEGORIES.find(category => category.id === 'menu-dia')!;
+
+export const DEFAULT_MENU_DATA: Category[] = [
+  MENU_ENTRADAS_CATEGORY,
+  MENU_CATEGORY,
+  ...CATALOG_CATEGORIES.filter(category => category.id !== 'menu-dia'),
 ];

@@ -66,6 +66,11 @@ button { font:inherit; }
 .theme-amazon .dish-action button { background:var(--leaf); box-shadow:0 3px 9px #137a4340; }
 .theme-daily .group-title { color:#a05600; background:#fff5cf; border-color:#f1dca1; }
 .theme-daily .dish-action button { background:#d17b00; }
+.menu-order-note { padding:14px 16px; display:flex; align-items:flex-start; gap:10px; color:#704000; background:#fff5cf; border:1px solid #f1d58b; border-top:0; }
+.menu-order-note > svg { flex:0 0 auto; margin-top:1px; color:#b56800; }
+.menu-order-note b,.menu-order-note span { display:block; }
+.menu-order-note b { font-size:13px; }
+.menu-order-note span { margin-top:3px; font-size:11px; line-height:1.4; color:#7a643e; }
 .region-break { margin:3px 0 17px; padding:24px 19px; border-radius:18px; color:white; background:#0a713d; position:relative; overflow:hidden; }
 .region-break:before { content:''; position:absolute; inset:0; background:linear-gradient(100deg,#075530,#248137); }
 .region-break span,.region-break strong { position:relative; display:block; }
@@ -111,12 +116,31 @@ footer small { color:#a9cfe6; font-size:10px; }
 .cart-line { padding:14px 2px; display:flex; justify-content:space-between; align-items:center; gap:12px; border-bottom:1px dashed #cddce5; }
 .cart-line b { font-size:12px; display:block; max-width:250px; }
 .cart-line span { color:var(--red); font-size:11px; font-weight:800; display:block; margin-top:4px; }
+.cart-line small { display:block; margin-top:4px; color:#607684; font-size:10px; line-height:1.25; }
 .quantity { display:flex; gap:7px; align-items:center; }
 .quantity button { width:26px; height:26px; display:grid; place-items:center; border:1px solid #cbdce5; color:var(--ocean); border-radius:7px; background:white; cursor:pointer; }
 .quantity .remove { color:var(--red); border:0; background:transparent; margin-left:2px; }
 .total { padding:20px 2px; display:flex; justify-content:space-between; font-weight:800; }
 .total b { color:var(--red); font-size:18px; }
 .whatsapp { border:0; border-radius:12px; width:100%; padding:16px; color:white; background:#25d366; font-size:13px; font-weight:800; display:flex; justify-content:center; align-items:center; gap:5px; cursor:pointer; }
+
+.menu-customizer-overlay { z-index:40; }
+.menu-customizer { max-width:760px; width:100%; max-height:92vh; overflow:auto; padding:24px 20px 26px; color:var(--ink); background:var(--paper); border-radius:27px 27px 0 0; }
+.menu-customizer .panel-head { margin-bottom:14px; }
+.menu-customizer .panel-head h2 { max-width:520px; font-size:25px; line-height:1.08; }
+.selected-menu { position:relative; margin-bottom:20px; padding:15px 76px 15px 16px; border:1px solid #f0d38a; border-radius:14px; background:#fff8de; }
+.selected-menu span,.selected-menu b { display:block; }
+.selected-menu span { color:#97600b; text-transform:uppercase; font-size:9px; font-weight:800; letter-spacing:.12em; }
+.selected-menu b { margin-top:5px; font-size:13px; line-height:1.3; }
+.selected-menu strong { position:absolute; right:15px; top:50%; translate:0 -50%; color:var(--red); font-size:13px; }
+.choice-group { margin:0 0 20px; padding:0; border:0; }
+.choice-group legend { margin-bottom:10px; padding:0; font-family:'Playfair Display',serif; font-size:17px; font-weight:800; }
+.choice-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+.choice-grid button { min-height:52px; padding:10px 12px; display:flex; align-items:center; justify-content:center; gap:6px; border:1px solid #cbdce5; border-radius:12px; color:#315970; background:white; font-size:12px; font-weight:700; line-height:1.2; cursor:pointer; }
+.choice-grid button.selected { color:#7f4700; border-color:#d88712; background:#fff2c3; box-shadow:0 0 0 2px #ffd75d4d; }
+.choice-grid button svg { flex:0 0 auto; }
+.add-custom-menu { width:100%; min-height:52px; border:0; border-radius:13px; display:flex; align-items:center; justify-content:center; gap:8px; color:white; background:#d17b00; font-weight:800; cursor:pointer; }
+.add-custom-menu:disabled { color:#7a8b94; background:#dce5ea; cursor:not-allowed; }
 
 @media (min-width:640px) {
   .topbar { padding-left:30px; padding-right:30px; }
