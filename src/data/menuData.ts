@@ -17,7 +17,7 @@ export interface Category {
   items: Dish[];
 }
 
-const price = (value: number) => `S/. ${value.toFixed(2)}`;
+const price = (value: number) => value % 1 === 0 ? `S/. ${value}` : `S/. ${value.toFixed(2)}`;
 const dish = (grupo: string, nombre: string, value: number, nota?: string): Dish => ({ grupo, nombre, precio: price(value), nota });
 const CATEGORY_IMAGES = {
   marinos: '/images/category-marinos.webp',

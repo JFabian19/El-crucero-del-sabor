@@ -1,0 +1,318 @@
+categoria,nombre,precio,grupo,nota,activo
+Platos marinos,Ceviche de pescado,35,Ceviches,,SI
+Platos marinos,Ceviche mixto,45,Ceviches,,SI
+Platos marinos,Ceviche al Crucero de pescado,43,Ceviches,,SI
+Platos marinos,Ceviche al Crucero mixto,48,Ceviches,,SI
+Platos marinos,Leche de tigre,25,Ceviches,,SI
+Platos marinos,Chilcano,15,Ceviches,,SI
+Platos marinos,Chilcano acevichado,20,Ceviches,,SI
+Platos marinos,Tiradito de pescado,40,Tiraditos,,SI
+Platos marinos,Tiradito mixto,45,Tiraditos,,SI
+Platos marinos,Chicharrón de pescado,45,Chicharrones,,SI
+Platos marinos,Chicharrón mixto,55,Chicharrones,,SI
+Platos marinos,Chicharrón de calamar,45,Chicharrones,,SI
+Platos marinos,Chaufa de pescado,45,Chaufas,,SI
+Platos marinos,Chaufa de mariscos,45,Chaufas,,SI
+Platos marinos,Chaufa de langostino,50,Chaufas,,SI
+Platos marinos,Chaufa de camarón,50,Chaufas,,SI
+Platos marinos,Arroz con mariscos,45,Arroces,,SI
+Platos marinos,Arroz con langostinos,50,Arroces,,SI
+Platos marinos,Arroz con camarón,50,Arroces,,SI
+Pescados y sudados,Jalea de pescado,45,Jaleas,,SI
+Pescados y sudados,Jalea mixta,50,Jaleas,,SI
+Pescados y sudados,Jalea de cecina,40,Jaleas,,SI
+Pescados y sudados,Jalea mixta de cecina y chorizo,45,Jaleas,,SI
+Pescados y sudados,Cabrilla frita con yuca sancochada,45,Pescado frito,,SI
+Pescados y sudados,Cabrilla frita con yuca frita,45,Pescado frito,,SI
+Pescados y sudados,Corvina frita con yuca sancochada,55,Pescado frito,,SI
+Pescados y sudados,Corvina frita con yuca frita,55,Pescado frito,,SI
+Pescados y sudados,Chita al ajo con yuca sancochada,55,Pescado frito,,SI
+Pescados y sudados,Chita al ajo con yuca frita,55,Pescado frito,,SI
+Pescados y sudados,Trucha frita con frejol,30,Pescado frito,,SI
+Pescados y sudados,Trucha frita con yuca,30,Pescado frito,,SI
+Pescados y sudados,Filete de pescado frito,25,Pescado frito,,SI
+Pescados y sudados,Filete de pescado a la plancha,25,Pescado frito,,SI
+Pescados y sudados,Sudado de pescado (filete),45,Sudados,,SI
+Pescados y sudados,Sudado mixto,60,Sudados,,SI
+Pescados y sudados,Sudado de cabrilla,55,Sudados,,SI
+Pescados y sudados,Sudado de cabrilla con mariscos,60,Sudados,,SI
+Pescados y sudados,Sudado de chita,55,Sudados,,SI
+Pescados y sudados,Sudado de chita con mariscos,60,Sudados,,SI
+Pescados y sudados,Sudado de tramboyo,55,Sudados,,SI
+Pescados y sudados,Sudado de tramboyo con mariscos,60,Sudados,,SI
+Pescados y sudados,Sudado de trucha,30,Sudados,,SI
+Pescados y sudados,Tacu tacu con mariscos,45,Tacu tacu de mariscos,,SI
+Pescados y sudados,Tacu tacu con camarones,50,Tacu tacu de mariscos,,SI
+Pescados y sudados,Tacu tacu con langostinos,50,Tacu tacu de mariscos,,SI
+Pescados y sudados,Tacu tacu con pescado a la plancha (filete),40,Tacu tacu de mariscos,,SI
+Dúos marinos,Ceviche con chicharrón de pescado,50,Dúos marinos,,SI
+Dúos marinos,Ceviche con chicharrón de calamar,50,Dúos marinos,,SI
+Dúos marinos,Ceviche con arroz con mariscos,50,Dúos marinos,,SI
+Dúos marinos,Ceviche con chaufa de pescado,50,Dúos marinos,,SI
+Dúos marinos,Ceviche con chaufa de mariscos,50,Dúos marinos,,SI
+Dúos marinos,Arroz con mariscos y chicharrón de pescado,55,Dúos marinos,,SI
+Dúos marinos,Arroz con mariscos y chicharrón de calamar,60,Dúos marinos,,SI
+Dúos marinos,Ceviche mixto con chicharrón de pescado,60,Dúos marinos,,SI
+Dúos marinos,Ceviche mixto con chicharrón de calamar,60,Dúos marinos,,SI
+Dúos marinos,Arroz con mariscos y chicharrón mixto,60,Dúos marinos,,SI
+Dúos marinos,Ceviche mixto con chicharrón mixto,60,Dúos marinos,,SI
+Dúos marinos,Ceviche mixto con arroz con mariscos,60,Dúos marinos,,SI
+Tríos marinos,Ceviche + chicharrón de pescado + arroz con mariscos,70,Tríos marinos,,SI
+Tríos marinos,Ceviche + chicharrón de calamar + arroz con mariscos,70,Tríos marinos,,SI
+Tríos marinos,Ceviche + chicharrón de pescado + chaufa de pescado,70,Tríos marinos,,SI
+Tríos marinos,Ceviche + chicharrón de pescado + chicharrón de calamar,70,Tríos marinos,,SI
+Tríos marinos,Ceviche + chicharrón mixto + chaufa de mariscos,80,Tríos marinos,,SI
+Tríos marinos,Ceviche + chicharrón mixto + arroz con mariscos,80,Tríos marinos,,SI
+Tríos marinos,Ceviche mixto + chicharrón mixto + arroz con mariscos,80,Tríos marinos,,SI
+Tríos marinos,Ceviche mixto + chicharrón de calamar + chaufa de mariscos,80,Tríos marinos,,SI
+Tríos marinos,Ceviche mixto + chicharrón mixto + chaufa de mariscos,80,Tríos marinos,,SI
+Tríos marinos,Ceviche mixto + chicharrón mixto + chicharrón de calamar,80,Tríos marinos,,SI
+Tríos marinos,Ceviche + arroz con mariscos + causa + chicharrón de pescado,80,Tríos marinos,,SI
+Clásicos marinos,Leche de pantera,25,Clásicos,,SI
+Clásicos marinos,Leche de tigre,25,Clásicos,,SI
+Clásicos marinos,Ceviche de conchas negras,45,Clásicos,,SI
+Clásicos marinos,Choritos a la chalaca · 6 unidades,25,Clásicos,,SI
+Clásicos marinos,Choritos a la chalaca · 10 unidades,50,Clásicos,,SI
+Clásicos marinos,Ceviche clásico,55,Clásicos,,SI
+Clásicos marinos,Pulpo a la parrilla,55,Clásicos,,SI
+Clásicos marinos,Causa al olivo,35,Clásicos,,SI
+Clásicos marinos,Arroz con conchas negras,45,Clásicos,,SI
+Clásicos marinos,Picante de mariscos,45,Picantes,,SI
+Clásicos marinos,Picante de langostinos,50,Picantes,,SI
+Clásicos marinos,Picante de camarón,50,Picantes,,SI
+Clásicos marinos,Parihuela de filete y mariscos,40,Parihuelas,,SI
+Clásicos marinos,Parihuela de chita con mariscos,60,Parihuelas,,SI
+Clásicos marinos,Parihuela de cabrilla con mariscos,60,Parihuelas,,SI
+Clásicos marinos,Parihuela de tramboyo con mariscos,60,Parihuelas,,SI
+Clásicos marinos,Chupe de pescado,40,Chupes,,SI
+Clásicos marinos,Chupe de langostino,45,Chupes,,SI
+Clásicos marinos,Chupe mixto de mariscos,50,Chupes,,SI
+Clásicos marinos,Chupe de camarón,50,Chupes,,SI
+Platos criollos,Costillar a la norteña con yuca y frejol,45,Platos a la carta,,SI
+Platos criollos,Tacu tacu con cabrito a la norteña,60,Platos a la carta,,SI
+Platos criollos,Arroz con pato,45,Platos a la carta,,SI
+Platos criollos,Seco de ternera con yuca y frejol,55,Platos a la carta,,SI
+Platos criollos,Tacu tacu con seco de pato,55,Platos a la carta,,SI
+Platos criollos,Churrasco a la plancha,30,Carnes,,SI
+Platos criollos,Bisteck a lo pobre,35,Carnes,,SI
+Platos criollos,Bisteck a la plancha,30,Carnes,,SI
+Platos criollos,Bisteck a la chorrillana,30,Carnes,,SI
+Platos criollos,Tacu tacu a lo pobre,40,Carnes,,SI
+Platos criollos,Lomo saltado,38,Saltados,,SI
+Platos criollos,Lomo a la parrilla,45,Saltados,,SI
+Platos criollos,Lomo a lo pobre,40,Saltados,,SI
+Platos criollos,Tallarín saltado de carne,30,Saltados,,SI
+Platos criollos,Tacu tacu con lomo saltado,40,Saltados,,SI
+Platos criollos,Lomo al jugo,40,Saltados,,SI
+Platos criollos,Lomo saltado de cecina,40,Saltados,,SI
+Platos criollos,Tallarín verde con pollo a la plancha,40,Pastas,,SI
+Platos criollos,Tallarín verde con milanesa,40,Pastas,,SI
+Platos criollos,Tallarín verde con bisteck,40,Pastas,,SI
+Platos criollos,Tallarín verde con churrasco,45,Pastas,,SI
+Platos criollos,Tallarín a la huancaína con lomo de carne,40,Pastas,,SI
+Platos criollos,Tallarín a la huancaína con bisteck,40,Pastas,,SI
+Platos criollos,Tallarín a la huancaína con churrasco,45,Pastas,,SI
+Platos criollos,Tallarín a la huancaína con pollo a la plancha,40,Pastas,,SI
+Platos criollos,Tallarín a la huancaína con pechuga a la plancha,40,Pastas,,SI
+Platos criollos,Chaufa de pollo,35,Arroz chaufa criollo,,SI
+Platos criollos,Chaufa de carne,35,Arroz chaufa criollo,,SI
+Platos criollos,Chaufa mixto de pollo y carne,40,Arroz chaufa criollo,,SI
+Sopas y tradicionales,Milanesa de pollo,30,Pollo,,SI
+Sopas y tradicionales,Pollo broaster,30,Pollo,,SI
+Sopas y tradicionales,Chicharrón de pollo,30,Pollo,,SI
+Sopas y tradicionales,Pechuga a la plancha,30,Pollo,,SI
+Sopas y tradicionales,Pechuga a la plancha a lo pobre,35,Pollo,,SI
+Sopas y tradicionales,Tacu tacu con pechuga a lo pobre,35,Pollo,,SI
+Sopas y tradicionales,Caldo de pollo,20,Sopas,,SI
+Sopas y tradicionales,Sustancia de carne,20,Sopas,,SI
+Sopas y tradicionales,Sustancia de pollo,20,Sopas,,SI
+Sopas y tradicionales,Sopa a la minuta de carne,20,Sopas,,SI
+Sopas y tradicionales,Sopa a la minuta de pollo,20,Sopas,,SI
+Sopas y tradicionales,Sopa de dieta de pollo,20,Sopas,,SI
+Sopas y tradicionales,"1 cuy frito con papa sancochada, choclo y zarza criolla",100,Platos tradicionales,,SI
+Sopas y tradicionales,"1 cuy picante con papa sancochada, choclo y zarza criolla",100,Platos tradicionales,,SI
+Sopas y tradicionales,"1/2 cuy frito con papa sancochada, choclo y zarza criolla",50,Platos tradicionales,,SI
+Sopas y tradicionales,"1/2 cuy picante con papa sancochada, choclo y zarza criolla",50,Platos tradicionales,,SI
+Sopas y tradicionales,"Chicharrón de chancho con papa sancochada, choclo y zarza criolla",35,Platos tradicionales,,SI
+Sopas y tradicionales,Bisteck a lo pobre,35,Platos a lo pobre,,SI
+Sopas y tradicionales,Milanesa a lo pobre,35,Platos a lo pobre,,SI
+Sopas y tradicionales,Chuleta a lo pobre,35,Platos a lo pobre,,SI
+Sopas y tradicionales,Pechuga a lo pobre,35,Platos a lo pobre,,SI
+Sopas y tradicionales,Churrasco a lo pobre,35,Platos a lo pobre,,SI
+Sopas y tradicionales,Lomo saltado a lo pobre,40,Platos a lo pobre,,SI
+Platos de la selva,Tacacho con cecina,25,Tacacho,,SI
+Platos de la selva,Tacacho con chorizo,20,Tacacho,,SI
+Platos de la selva,Tacacho con pescado,25,Tacacho,,SI
+Platos de la selva,Tacacho con pechuga a la plancha,35,Tacacho,,SI
+Platos de la selva,Tacacho con doncella,35,Tacacho,,SI
+Platos de la selva,Tacacho con boquichico,35,Tacacho,,SI
+Platos de la selva,Tacacho con palometa,35,Tacacho,,SI
+Platos de la selva,Tacacho a lo macho,40,Tacacho,,SI
+Platos de la selva,Tacacho mixto,40,Tacacho,,SI
+Platos de la selva,Cecina con maduro frito,25,Tacacho,,SI
+Platos de la selva,Cecina con patacones,30,Tacacho,,SI
+Platos de la selva,Cecina montada,30,Tacacho,,SI
+Platos de la selva,Juane de pollo con frejol,25,Juanes,,SI
+Platos de la selva,Juane de pollo con tacacho,25,Juanes,,SI
+Platos de la selva,Juane de pollo con plátano sancochado,25,Juanes,,SI
+Platos de la selva,Juane de pollo con patacones,25,Juanes,,SI
+Platos de la selva,Juane de pollo con maduro frito,25,Juanes,,SI
+Platos de la selva,Juane de pollo con cecina,35,Juanes,,SI
+Platos de la selva,Juane de pollo con chorizo,35,Juanes,,SI
+Platos de la selva,Juane de gallina con tacacho,28,Juanes,,SI
+Platos de la selva,Juane de gallina con patacones,28,Juanes,,SI
+Platos de la selva,Juane de gallina con maduro frito,28,Juanes,,SI
+Platos de la selva,Juane de gallina con frejol,28,Juanes,,SI
+Platos de la selva,Juane de gallina con cecina,38,Juanes,,SI
+Platos de la selva,Juane de gallina con chorizo,38,Juanes,,SI
+Platos de la selva,Sudado de doncella,35,Sudados,,SI
+Platos de la selva,Sudado de palometa,35,Sudados,,SI
+Platos de la selva,Sudado de boquichico,35,Sudados,,SI
+Platos de la selva,Chilcano de carachama,35,Chilcanos,,SI
+Platos de la selva,Chilcano de boquichico,35,Chilcanos,,SI
+Platos de la selva,Chilcano de palometa,35,Chilcanos,,SI
+Platos de la selva,Chilcano de doncella,35,Chilcanos,,SI
+Especiales de la selva,Doncella frita,35,Frituras,,SI
+Especiales de la selva,Palometa frita,35,Frituras,,SI
+Especiales de la selva,Boquichico frito,35,Frituras,,SI
+Especiales de la selva,Cecina a lo pobre,35,Platos especiales,,SI
+Especiales de la selva,Jalea de cecina,40,Platos especiales,,SI
+Especiales de la selva,Saltado de cecina,40,Platos especiales,,SI
+Especiales de la selva,Jalea mixta de cecina y chorizo,40,Platos especiales,,SI
+Especiales de la selva,Tacu tacu con saltado de cecina,45,Platos especiales,,SI
+Especiales de la selva,Tacu tacu con cecina a lo pobre,45,Platos especiales,,SI
+Especiales de la selva,"Combinado: tacacho, cecina y chorizo",35,Combinaciones,,SI
+Especiales de la selva,"Especial: juane, tacacho y cecina",45,Combinaciones,,SI
+Especiales de la selva,"Especial: juane, tacacho y chorizo",45,Combinaciones,,SI
+Especiales de la selva,"Súper especial: juane, tacacho, cecina y chorizo",55,Combinaciones,,SI
+Especiales de la selva,"Piqueo familiar: juane, doncella, tacacho, cecina, chorizo, patacones y maduro frito",120,Combinaciones,,SI
+Especiales de la selva,Chaufa de cecina + tacacho con cecina,55,Piqueo selvático,,SI
+Especiales de la selva,Chaufa de cecina + juane de pollo,55,Piqueo selvático,,SI
+Especiales de la selva,Chaufa mixto + tacacho con cecina,60,Piqueo selvático,,SI
+Especiales de la selva,Chaufa de cecina + tacacho con cecina y chorizo,65,Piqueo selvático,,SI
+Especiales de la selva,Chaufa mixto + tacacho con cecina y chorizo,70,Piqueo selvático,,SI
+Especiales de la selva,Chaufa con cecina,35,Arroces,,SI
+Especiales de la selva,Chaufa con chorizo,35,Arroces,,SI
+Especiales de la selva,Chaufa con cecina y chorizo,40,Arroces,,SI
+Bebidas de la selva,Aguajina,20,Refrescos · jarra,,SI
+Bebidas de la selva,Cocona,20,Refrescos · jarra,,SI
+Bebidas de la selva,Camu camu,20,Refrescos · jarra,,SI
+Bebidas de la selva,Chicha morada,15,Refrescos · jarra,,SI
+Bebidas de la selva,Piña,20,Refrescos · jarra,,SI
+Bebidas de la selva,Maracuyá,15,Refrescos · jarra,,SI
+Bebidas de la selva,Aguajina,10,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Cocona,10,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Camu camu,10,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Chicha morada,8,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Piña,10,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Maracuyá,8,Refrescos · 1/2 litro,,SI
+Bebidas de la selva,Aguajina frozen,25,Frozen · jarra,,SI
+Bebidas de la selva,Cocona frozen,25,Frozen · jarra,,SI
+Bebidas de la selva,Camu camu frozen,25,Frozen · jarra,,SI
+Bebidas de la selva,Chicha morada frozen,20,Frozen · jarra,,SI
+Bebidas de la selva,Limonada frozen,20,Frozen · jarra,,SI
+Bebidas de la selva,Piña frozen,20,Frozen · jarra,,SI
+Bebidas de la selva,Maracuyá frozen,20,Frozen · jarra,,SI
+Bebidas de la selva,Aguajina frozen,13,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Cocona frozen,13,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Camu camu frozen,13,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Chicha morada frozen,10,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Limonada frozen,10,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Piña frozen,10,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Maracuyá frozen,10,Frozen · 1/2 litro,,SI
+Bebidas de la selva,Rosquitas de yuca salada,2.5,Gustitos,,SI
+Bebidas de la selva,Ñuto de yuca dulce,2.5,Gustitos,,SI
+Bebidas de la selva,Pisco sour,15,Licores aperitivos,,SI
+Bebidas de la selva,Chilcano,15,Licores aperitivos,,SI
+Bebidas de la selva,RC,30,Licores exóticos · botella,,SI
+Bebidas de la selva,Uvachado,30,Licores exóticos · botella,,SI
+Bebidas de la selva,7 raíces,30,Licores exóticos · botella,,SI
+Bebidas de la selva,RC,15,Licores exóticos · 1/2 litro,,SI
+Bebidas de la selva,Uvachado,15,Licores exóticos · 1/2 litro,,SI
+Bebidas de la selva,7 raíces,15,Licores exóticos · 1/2 litro,,SI
+Desayunos,Jugo de papaya,8,Jugos solos,,SI
+Desayunos,Jugo de fresa,8,Jugos solos,,SI
+Desayunos,Jugo de piña,8,Jugos solos,,SI
+Desayunos,Jugo de melón,8,Jugos solos,,SI
+Desayunos,Jugo de mango,8,Jugos solos,,SI
+Desayunos,Jugo de plátano,8,Jugos solos,,SI
+Desayunos,Jugo surtido,10,Jugos solos,,SI
+Desayunos,Batido de fresa,10,Batidos con leche,,SI
+Desayunos,Batido de papaya,10,Batidos con leche,,SI
+Desayunos,Batido de plátano,10,Batidos con leche,,SI
+Desayunos,Batido de mango,10,Batidos con leche,,SI
+Desayunos,Batido de melón,10,Batidos con leche,,SI
+Desayunos,Pan con chicharrón,10,Sándwiches,,SI
+Desayunos,Pan con tamal,8,Sándwiches,,SI
+Desayunos,Pan con huevo revuelto,8,Sándwiches,,SI
+Desayunos,Pollo a la plancha,8,Sándwiches,,SI
+Desayunos,Pollo deshilachado,8,Sándwiches,,SI
+Desayunos,Huevo frito,4,Sándwiches,,SI
+Desayunos,Jamón y queso,5,Sándwiches,,SI
+Desayunos,Pan con mermelada,5,Sándwiches,,SI
+Desayunos,Pan con mantequilla,4,Sándwiches,,SI
+Desayunos,Pan con palta,4,Sándwiches,,SI
+Desayunos,Café con leche,5,Bebidas calientes,,SI
+Desayunos,Café,4,Bebidas calientes,,SI
+Desayunos,Infusión de manzanilla,2.5,Bebidas calientes,,SI
+Desayunos,Té,2.5,Bebidas calientes,,SI
+Desayunos,Anís,2.5,Bebidas calientes,,SI
+Comida saludable,"Sopa dieta con trozos de pollo, cabello de ángel y papa amarilla",20,Dietas,,SI
+Comida saludable,Pechuga a la plancha con ensalada fresca y papa sancochada,25,Dietas,,SI
+Comida saludable,Pechuga a la plancha con ensalada fresca y arroz,25,Dietas,,SI
+Comida saludable,Pechuga a la plancha con ensalada cocida y papa sancochada,25,Dietas,,SI
+Comida saludable,Pechuga a la plancha con ensalada cocida y arroz,25,Dietas,,SI
+Comida saludable,Ensalada Crucero con pollo a la plancha en trozos y palta,25,Dietas,,SI
+Comida saludable,Ensalada fresca con atún,25,Dietas,,SI
+Comida saludable,Filete de pescado al vapor con ensalada cocida y arroz,25,Dietas,,SI
+Comida saludable,Filete de pescado al vapor con ensalada cocida y papa sancochada,25,Dietas,,SI
+Comida saludable,Filete de pescado al vapor con ensalada fresca y arroz,25,Dietas,,SI
+Comida saludable,Filete de pescado al vapor con ensalada fresca y papa sancochada,25,Dietas,,SI
+Comida saludable,Filete de pescado a la plancha con ensalada cocida y arroz,25,Dietas,,SI
+Comida saludable,Filete de pescado a la plancha con ensalada cocida y papa sancochada,25,Dietas,,SI
+Comida saludable,Filete de pescado a la plancha con ensalada fresca y arroz,25,Dietas,,SI
+Comida saludable,Filete de pescado a la plancha con ensalada fresca y papa sancochada,25,Dietas,,SI
+Comida saludable,Churrasco a la parrilla con ensalada cocida y arroz,25,Dietas,,SI
+Comida saludable,Churrasco a la parrilla con ensalada cocida y papa sancochada,25,Dietas,,SI
+Comida saludable,Churrasco a la parrilla con ensalada fresca y arroz,25,Dietas,,SI
+Comida saludable,Churrasco a la parrilla con ensalada fresca y papa sancochada,25,Dietas,,SI
+Bebidas,Chicha morada,15,Refrescos · 1 litro,,SI
+Bebidas,Maracuyá,16,Refrescos · 1 litro,,SI
+Bebidas,Aguaje,20,Refrescos · 1 litro,,SI
+Bebidas,Cocona,20,Refrescos · 1 litro,,SI
+Bebidas,Camu camu,20,Refrescos · 1 litro,,SI
+Bebidas,Piña,16,Refrescos · 1 litro,,SI
+Bebidas,Chicha morada,8,Refrescos · 1/2 litro,,SI
+Bebidas,Maracuyá,8,Refrescos · 1/2 litro,,SI
+Bebidas,Aguaje,10,Refrescos · 1/2 litro,,SI
+Bebidas,Cocona,10,Refrescos · 1/2 litro,,SI
+Bebidas,Camu camu,10,Refrescos · 1/2 litro,,SI
+Bebidas,Piña,8,Refrescos · 1/2 litro,,SI
+Bebidas,Chicha frozen,20,Frozen · 1 litro,,SI
+Bebidas,Maracuyá frozen,25,Frozen · 1 litro,,SI
+Bebidas,Aguaje frozen,25,Frozen · 1 litro,,SI
+Bebidas,Cocona frozen,25,Frozen · 1 litro,,SI
+Bebidas,Camu camu frozen,25,Frozen · 1 litro,,SI
+Bebidas,Piña frozen,20,Frozen · 1 litro,,SI
+Bebidas,Té,2.5,Infusiones,,SI
+Bebidas,Anís,2.5,Infusiones,,SI
+Bebidas,Manzanilla,2.5,Infusiones,,SI
+Bebidas,Mate,4,Infusiones,,SI
+Bebidas,Café,5,Infusiones,,SI
+Bebidas,Café con leche,5,Infusiones,,SI
+Bebidas,Gaseosa descartable de 1.5 litros,12,Bebidas frías,,SI
+Bebidas,Gaseosa descartable de 1 litro,10,Bebidas frías,,SI
+Bebidas,Gaseosa descartable de 1/2 litro,4,Bebidas frías,,SI
+Bebidas,Gaseosa retornable de 1/2 litro,4,Bebidas frías,,SI
+Bebidas,Agua mineral,4,Bebidas frías,,SI
+Bebidas,Cerveza negra · 310 ml,10,Cervezas,,SI
+Bebidas,Cerveza de trigo · 310 ml,10,Cervezas,,SI
+Bebidas,Pilsen,12,Cervezas,,SI
+Bebidas,Corona,10,Cervezas,,SI
+Bebidas,Heineken,10,Cervezas,,SI
+Bebidas,Pilsener lata,7,Cervezas,,SI
+Bebidas,Vino Borgoña seco,30,Vinos y cocteles,,SI
+Bebidas,Vino Borgoña semiseco,30,Vinos y cocteles,,SI
+Bebidas,Vino Borgoña Magdalena,30,Vinos y cocteles,,SI
+Bebidas,Pisco sour,15,Vinos y cocteles,,SI
+Bebidas,Chilcano,15,Vinos y cocteles,,SI

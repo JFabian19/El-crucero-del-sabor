@@ -1,0 +1,59 @@
+tipo,nombre,precio,grupo,nota,activo
+Entrada,Sopa de casa con carne,,,,SI
+Entrada,Tequeños,,,,SI
+Entrada,Ensalada mixta,,,,SI
+Entrada,Coca-Cola,,,,SI
+Entrada,Inca Kola,,,,SI
+Entrada,Chicha morada,,,,SI
+Entrada,Agua mineral,,,,SI
+Plato,Pollo al horno con puré,15,Segundos,,SI
+Plato,Seco de ternera con frejol,16,Segundos,,SI
+Plato,Seco de ternera con yuca,16,Segundos,,SI
+Plato,Pollo a la plancha con frejol,14,Segundos,,SI
+Plato,Pollo a la plancha con puré,15,Segundos,,SI
+Plato,Asado de res con puré,20,Segundos,,SI
+Plato,Asado de res con frejol,20,Segundos,,SI
+Plato,Arroz chaufa de cecina,25,Segundos,,SI
+Plato,Arroz chaufa de chorizo,25,Segundos,,SI
+Plato,Arroz chaufa de pollo,20,Segundos,,SI
+Plato,Arroz chaufa de carne,20,Segundos,,SI
+Plato,Costillar dorado con papa sancochada,25,Segundos,,SI
+Plato,Pollo a la plancha con papa frita y ensalada,17,Segundos,,SI
+Plato,Milanesa de pollo con papa frita y ensalada,17,Segundos,,SI
+Plato,Chuleta de chancho con papas fritas y ensalada,17,Segundos,,SI
+Plato,Churrasco a la parrilla con papa frita y ensalada,18,Segundos,,SI
+Plato,Bonito frito con frejol,12,Segundos,,SI
+Plato,Bonito frito con yuca,12,Segundos,,SI
+Plato,Bisteck a la parrilla con papa frita y ensalada,20,Segundos,,SI
+Plato,Bisteck a lo pobre,25,Segundos,,SI
+Plato,Pechuga a lo pobre,25,Segundos,,SI
+Plato,Arroz con pato,35,Segundos,,SI
+Plato,Trucha frita con yuca,20,Segundos,,SI
+Plato,Trucha frita con frejol,20,Segundos,,SI
+Plato,Picante de cuy con papa sancochada,25,Segundos,,SI
+Plato,Cuy frito con papa sancochada,25,Segundos,,SI
+Plato,Arroz tapado a lo pobre,20,Segundos,,SI
+Plato,Macarrón de carne,17,Segundos,,SI
+Plato,Cecina a lo pobre,28,Segundos,,SI
+Plato,Pollo broaster con papa frita y ensalada,22,Segundos,,SI
+Plato,Chicharrón de pollo con papas fritas y ensalada,22,Segundos,,SI
+Plato,Saltado de pollo,22,Segundos,,SI
+Plato,Lomo saltado de carne,25,Segundos,,SI
+Plato,Tallarín saltado de carne,25,Segundos,,SI
+Plato,Tallarín saltado de pollo,25,Segundos,,SI
+Plato,Tallarín verde con pechuga,30,Segundos,,SI
+Plato,Tallarín verde con bisteck,30,Segundos,,SI
+Plato,Tallarín a la huancaína con pechuga,30,Segundos,,SI
+Plato,Tallarín a la huancaína con bisteck,30,Segundos,,SI
+Plato,Tallarín a lo Alfredo con pechuga,25,Segundos,,SI
+Plato,Arroz chaufa de pollo a lo pobre,25,Platos a lo pobre,,SI
+Plato,Milanesa de pollo a lo pobre,25,Platos a lo pobre,,SI
+Plato,Chuleta de chancho a lo pobre,25,Platos a lo pobre,,SI
+Plato,Churrasco a la parrilla a lo pobre,25,Platos a lo pobre,,SI
+Plato,Pechuga a lo pobre,25,Platos a lo pobre,,SI
+Plato,Bisteck a lo pobre,25,Platos a lo pobre,,SI
+Plato,Cecina a lo pobre,28,Platos a lo pobre,,SI
+Plato,Arroz chaufa de chorizo a lo pobre,28,Platos a lo pobre,,SI
+Plato,Arroz chaufa de cecina a lo pobre,28,Platos a lo pobre,,SI
+Plato,Arroz chaufa de carne a lo pobre,28,Platos a lo pobre,,SI
+Plato,Arroz chaufa mixto de carne a lo pobre,28,Platos a lo pobre,,SI
